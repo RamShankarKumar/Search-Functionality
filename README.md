@@ -5,5 +5,3 @@
 - HTML
 - CSS
 - React JS (A Javascript Library)
-
-## Concept Used :
