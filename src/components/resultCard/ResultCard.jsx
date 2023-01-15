@@ -3,6 +3,7 @@ import { forwardRef, useEffect } from 'react';
 
 const ResultCard = forwardRef(({ handleScrollClick, inputText, searchResult, id, length, active, setHovered, selected, upPress, downPress }, ref) => {
 
+  // This useEffect decides to scroll the list Item only if keyboard navigation is there.
   useEffect(() => {
     if ((selected?.id === searchResult.id) && (upPress || downPress)) {
       handleScrollClick();

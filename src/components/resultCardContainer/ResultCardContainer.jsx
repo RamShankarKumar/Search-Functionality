@@ -2,6 +2,8 @@ import './ResultCardContainer.css'
 import ResultCard from '../resultCard/ResultCard'
 import { createRef, useState, useEffect } from 'react';
 
+
+// custom hook to find if pressed key is either `ArrowDown` or `ArrowUp` in keyboard nagivation.
 const useKeyPress = function (targetKey) {
   const [keyPressed, setKeyPressed] = useState(false);
 
@@ -69,7 +71,7 @@ const ResultCardContainer = ({ inputText, searchResult }) => {
     <div className='resultCardContainer'>
       {searchResult.length ?
         searchResult.map((searchResultItem, index) => {
-          const ref = createRef();
+          const ref = createRef(); // creating ref for each searchItem card to make scroll that particular item when clicked.
 
           const handleScrollClick = () => {
             ref.current.scrollIntoView({

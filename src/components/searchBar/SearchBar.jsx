@@ -12,6 +12,8 @@ const SearchBar = () => {
     setInputText(e.target.value)
   }
 
+
+  // Function to handle results got from input text.
   function handleSearchResult(inputText) {
     const filteredData = data.filter((dataItem) => {
       const dataItemValues = Object.values(dataItem).join(' ').toLowerCase();
@@ -24,6 +26,7 @@ const SearchBar = () => {
       }
     })
 
+    // This loop will check if searched text is present in the `item array` or not. If present it puts a new key `textItemsArray` to the exisiting result object.
     return filteredData.map((filteredItem) => {
       const filteredItemValues = filteredItem.items.join(' ').toLowerCase();
       if (filteredItemValues.includes(inputText.toLowerCase())) {
