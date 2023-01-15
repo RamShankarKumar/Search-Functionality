@@ -1,0 +1,39 @@
+.resultCard {
+  padding: 15px;
+  border-bottom: 1px solid #282c35;
+}
+
+.resultCard:hover {
+  background-color: rgb(230, 233, 230);
+}
+
+.last-resultCard {
+  padding: 15px;
+}
+
+.last-resultCard:hover {
+  background-color: rgb(230, 233, 230);
+}
+
+.active {
+  background-color: rgb(230, 233, 230);
+}
+
+.resultItem > span {
+  color: rgb(73, 73, 160);
+}
+
+.resultItem {
+  padding: 7px 0;
+  border-top: 1px solid rgb(224, 216, 216);
+  border-bottom: 1px solid rgb(224, 216, 216);
+  margin-bottom: 15px;
+}
+
+.resultId {
+  font-size: 20px;
+}
+
+.resultName {
+  margin-bottom: 15px;
+}

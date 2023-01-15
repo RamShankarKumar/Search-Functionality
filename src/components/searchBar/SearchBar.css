@@ -1,0 +1,38 @@
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+
+  border-radius: 5px;
+
+  height: 40px;
+  width: 500px;
+
+  font-size: 1.5rem;
+
+  padding: 5px 50px;
+}
+
+.searchBarContainer-input {
+  margin-top: 100px;
+  margin-bottom: 5px;
+
+  position: relative;
+}
+
+.icon {
+  position: absolute;
+  font-size: 1.5rem;
+  top: 10px;
+}
+
+.icon-search {
+  left: 15px;
+}
+
+.icon-cancel {
+  right: 15px;
+  cursor: pointer;
+}

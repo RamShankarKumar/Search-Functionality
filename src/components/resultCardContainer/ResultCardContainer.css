@@ -1,0 +1,14 @@
+.resultCardContainer {
+  border-radius: 5px;
+  background-color: white;
+  max-height: 350px;
+  overflow-y: scroll;
+}
+
+.noResult {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
